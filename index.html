@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<style>
+#myBtn {
+    display: none;
+    position: relative;
+    bottom: 5px;
+    width:95%;
+    cursor: pointer;
+    animation:mover 2s linear infinite;
+    transition:1s;
+}
+
+@keyframes mover{
+50%{
+      transform:translateY(-20%)
+}
+}
+</style>
+<head>
+<meta charset="utf-8">
+<title>Ramkumaran-Portfolio</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet"
+</head>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+</script>
+<body>
+  <div class="top-container">
+    <img class="top-cloud" src="Images/cloud.png" alt="cloud-image">
+    <h1>I'm Ramkumaran</h1>
+    <h2>a Web Developer</h2>
+    <img class="bottom-cloud" src="Images/cloud1.png" alt="cloud-image">
+  </div>
+  <div class="middle-container">
+    <div class="profile">
+      <img class="mydb" src="Images/profile.jpeg" alt="My_Profile" height:200px">
+      <h2 style="font-size:38px">Hello</h2>
+      <p class="intro">I'm Ramkumaran.I'm a Web Developer</p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h2 style="font-size:40px">My Skills.</h2>
+      <div class="skill-row">
+        <img class="skill-image1" src="Images/checklist.png" alt="Checklist-Image">
+        <h2>Design & Development</h2>
+        <p>I am having an interest of programming and coding since i am 17 years old</p>
+        <p>I have a basic coding knowledge in some programming languages such as C, C++, Java, Python</p>
+      </div>
+      <div class="skill-row">
+        <img class="skill-image2" src="Images/video.png" alt="Image">
+        <h2>Video Editing</h2>
+        <p>I have a basic video editing skill.During my lesuire time i am editing videos.</p>
+      </div><br>
+      <div class="skill-row">
+        <img class="skill-image1" style="height:238px;width:252px" src="Images/os.png" alt="Linux-Image">
+        <h2>Operating Systems</h2>
+        <p>I have a strong foundation in windows & linux operating systems.I have a strong foundation in Ms-office words,excel,powerpoint skills. I have a good knowledge in linux commands.I love linux.I have a basic hacking skills</p>
+      </div>
+      <div class="skill-row">
+        <img class="skill-image2" style="height:200px;width:312px" src="Images/C|EH.png" alt="C|EH-Image">
+        <h2>Hacking Skills</h2>
+        <p>I have a strong foundation in Hacking fundamentals.I have a basic skills in cyber attacks such as Man In The Middle(MITM) Attack's, Sniffing Attack's, Spoofing Attack's, Wireless Attack's, Password's Attacks, Social Engineering Attack's, Phishing Attack's.</p>
+    </div>
+    <hr>
+    <div class="bottom-container">
+      <a class="footer-link" href="mailto:KUMARAN262014@gmail.com"><img style="width:40px" class="logo" src="Images/gmail.png"></a>
+      <a class="footer-link" href="https://twitter.com/"><img class="logo" src="Images/twitter1.png"></a>
+      <a class="footer-ling" href="https://wa.me/+919342530225/"><img class="logo" src="Images/whatsapp.png"></a>
+      <a class="footer-link" href="https://www.linkedin.com/in"><img class="logo" src="Images/linkdn1.png"></a>
+      <p class="copyright">&copy 2023 Ramkumaran.</p>
+      <a onclick="topFunction()" id="myBtn"><img src="Images/scroll_up.png" alt="scroll_up_image"></a>
+    </div>
+</body>
+</html>
